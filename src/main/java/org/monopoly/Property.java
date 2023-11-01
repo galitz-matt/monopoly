@@ -4,11 +4,11 @@ import java.util.List;
 
 public class Property implements Tile {
 
-    private PropertyType propertyType;
-    private int price;
-    private List<Integer> rent;
-    private List<Integer> constructionPrices;
-    private int mortgageValue;
+    private final PropertyType propertyType;
+    private final int price;
+    private final List<Integer> rent;
+    private final List<Integer> constructionPrices;
+    private final int mortgageValue;
 
     private final int NO_MONOPOLY = 0;
     private final int WITH_MONOPOLY = 1;
@@ -59,7 +59,7 @@ public class Property implements Tile {
     }
 
     public int getRentWithHouses(int numHouses) {
-        if (numHouses < 0 && numHouses > 4) {
+        if (numHouses < 0 || numHouses > 4) {
             var errorMessage = String.format("Invalid number of houses: %d", numHouses);
             throw new ArrayIndexOutOfBoundsException(errorMessage);
         }
