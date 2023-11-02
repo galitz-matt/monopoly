@@ -2,15 +2,22 @@ package org.monopoly;
 
 public class TaxTile implements Tile {
 
-    private final String name;
+    private final String id;
     private final int tax;
 
-    public TaxTile(String name, int tax) {
-        this.name = name;
+    public TaxTile(String id, int tax) {
+        this.id = id;
         this.tax = tax;
     }
 
-    public void interact() {
+    public void interact(Player player) {
         //TODO: charge tax to player
+    }
+
+    public String Id() {
+        return id;
+    }
+    public int Tax() {
+        return tax;
     }
 }

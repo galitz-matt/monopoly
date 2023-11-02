@@ -1,12 +1,12 @@
 package org.monopoly;
 
-public class GoTile implements Tile {
+public class GoToJailTile implements Tile {
 
     public void interact(Player player) {
-        //TODO: Give 200 to player if passed
+        //Send player to jail
     }
 
     public String Id() {
-        return "go";
+        return "gotojail";
     }
 }

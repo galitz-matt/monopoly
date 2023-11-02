@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="style(main): add newlines between method signatures in Player">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CPU.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): implement CPU realization of Player">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/FreeParkingTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/FreeParkingTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698870984505</updated>
-      <workItem from="1698870985338" duration="10335000" />
+      <workItem from="1698870985338" duration="11152000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -144,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698943904563</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat(main): implement CPU realization of Player">
+      <option name="closed" value="true" />
+      <created>1698944298571</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1698944298571</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +177,7 @@
     <MESSAGE value="feat(main): write method signatures in Player, and create User realization" />
     <MESSAGE value="feat(main): implement Player methods in User" />
     <MESSAGE value="style(main): add newlines between method signatures in Player" />
-    <option name="LAST_COMMIT_MESSAGE" value="style(main): add newlines between method signatures in Player" />
+    <MESSAGE value="feat(main): implement CPU realization of Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): implement CPU realization of Player" />
   </component>
 </project>

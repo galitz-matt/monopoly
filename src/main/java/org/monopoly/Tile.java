@@ -2,6 +2,7 @@ package org.monopoly;
 
 public interface Tile {
 
-    void interact();
+    void interact(Player player);
 
+    String Id();
 }
