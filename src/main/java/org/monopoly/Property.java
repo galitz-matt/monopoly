@@ -10,6 +10,10 @@ public class Property {
     private final int price;
     private final List<Integer> rent;
     private int buildingCost;
+    private final int mortgageValue;
+    private final int NO_MONOPOLY = 0;
+    private final int WITH_MONOPOLY = 1;
+    private final int WITH_HOTEL = 6;
 
     public Property(String id, String name, PropertyType propertyType, int price,
                     List<Integer> rent, int mortgageValue, List<Integer> constructionPrices) {
@@ -19,15 +23,8 @@ public class Property {
         this.price = price;
         this.rent = rent;
         this.mortgageValue = mortgageValue;
-        this.constructionPrices = constructionPrices;
+        setBuildingCost();
     }
-
-    private final int mortgageValue;
-    private final List<Integer> constructionPrices;
-
-    private final int NO_MONOPOLY = 0;
-    private final int WITH_MONOPOLY = 1;
-    private final int WITH_HOTEL = 6;
 
     public Property(String id, String name, PropertyType propertyType, int price, List<Integer> rent, int mortgageValue) {
         this.id = id;
@@ -36,11 +33,9 @@ public class Property {
         this.price = price;
         this.rent = rent;
         this.mortgageValue = mortgageValue;
-        this. constructionPrices = null;
-        setBuildingPrices();
     }
 
-    public void setBuildingPrices() {
+    public void setBuildingCost() {
         switch(getPropertyType()) {
             case BROWN:
             case GRAY:
@@ -65,6 +60,10 @@ public class Property {
         return id;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public PropertyType getPropertyType() {
         return propertyType;
     }
@@ -73,8 +72,8 @@ public class Property {
         return price;
     }
 
-    public List<Integer> getConstructionPrices() {
-        return constructionPrices;
+    public int getBuildingCost() {
+        return buildingCost;
     }
 
     public int getMortgageValue() {
