@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): write method signatures in Player, and create User realization">
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="style(main): add newlines between method signatures in Player">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CPU.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698870984505</updated>
-      <workItem from="1698870985338" duration="9628000" />
+      <workItem from="1698870985338" duration="10335000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -129,7 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698942897433</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat(main): implement Player methods in User">
+      <option name="closed" value="true" />
+      <created>1698943780682</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1698943780682</updated>
+    </task>
+    <task id="LOCAL-00009" summary="style(main): add newlines between method signatures in Player">
+      <option name="closed" value="true" />
+      <created>1698943904563</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1698943904563</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +158,8 @@
     <MESSAGE value="feat(main): create all Tile realizations" />
     <MESSAGE value="feat(main): create Player interface" />
     <MESSAGE value="feat(main): write method signatures in Player, and create User realization" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): write method signatures in Player, and create User realization" />
+    <MESSAGE value="feat(main): implement Player methods in User" />
+    <MESSAGE value="style(main): add newlines between method signatures in Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(main): add newlines between method signatures in Player" />
   </component>
 </project>
