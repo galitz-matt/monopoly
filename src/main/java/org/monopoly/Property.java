@@ -9,6 +9,19 @@ public class Property {
     private final PropertyType propertyType;
     private final int price;
     private final List<Integer> rent;
+    private int buildingCost;
+
+    public Property(String id, String name, PropertyType propertyType, int price,
+                    List<Integer> rent, int mortgageValue, List<Integer> constructionPrices) {
+        this.id = id;
+        this.name = name;
+        this.propertyType = propertyType;
+        this.price = price;
+        this.rent = rent;
+        this.mortgageValue = mortgageValue;
+        this.constructionPrices = constructionPrices;
+    }
+
     private final int mortgageValue;
     private final List<Integer> constructionPrices;
 
@@ -24,16 +37,32 @@ public class Property {
         this.rent = rent;
         this.mortgageValue = mortgageValue;
         this. constructionPrices = null;
+        setBuildingPrices();
     }
 
-    public Property(String id, String name, PropertyType propertyType, int price, List<Integer> rent, int mortgageValue, List<Integer> constructionPrices) {
-        this.id = id;
-        this.name = name;
-        this.propertyType = propertyType;
-        this.price = price;
-        this.rent = rent;
-        this.mortgageValue = mortgageValue;
-        this.constructionPrices = constructionPrices;
+    public void setBuildingPrices() {
+        switch(getPropertyType()) {
+            case BROWN:
+            case GRAY:
+                buildingCost = 50;
+                break;
+            case PINK:
+            case ORANGE:
+                buildingCost = 100;
+                break;
+            case RED:
+            case YELLOW:
+                buildingCost = 150;
+                break;
+            case GREEN:
+            case BLUE:
+                buildingCost = 200;
+                break;
+        }
+    }
+
+    public String Id() {
+        return id;
     }
 
     public PropertyType getPropertyType() {

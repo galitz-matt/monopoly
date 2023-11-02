@@ -25,12 +25,13 @@ public class JSONReader {
     }
 
     public List<String> getOrderedTileIDs() {
-        var tilesRoot = jsonRoot.getJSONArray("tiles");
+        var tilesIDsRoot = jsonRoot.getJSONArray("tiles");
         var tileIDs = new ArrayList<String>();
-        for (int i = 0; i < tilesRoot.length(); i++) {
-            var tileID = tilesRoot.getJSONObject(i).get("id").toString();
+        for (int i = 0; i < tilesIDsRoot.length(); i++) {
+            var tileID = tilesIDsRoot.getJSONObject(i).get("id").toString();
             tileIDs.add(tileID);
         }
         return tileIDs;
     }
+
 }

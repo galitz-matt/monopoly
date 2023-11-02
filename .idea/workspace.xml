@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): added id's to Tile realizations + getters">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): create JSONReader and implement JSONReader.getJSONRoot(), JSONReader.getOrderedTileIds()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698870984505</updated>
       <workItem from="1698870985338" duration="13369000" />
-      <workItem from="1698957103320" duration="1340000" />
+      <workItem from="1698957103320" duration="3065000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -197,7 +196,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698945103229</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat(main): create JSONReader and implement JSONReader.getJSONRoot(), JSONReader.getOrderedTileIds()">
+      <option name="closed" value="true" />
+      <created>1698958502251</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1698958502251</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +222,7 @@
     <MESSAGE value="style(main): add newlines between method signatures in Player" />
     <MESSAGE value="feat(main): implement CPU realization of Player" />
     <MESSAGE value="feat(main): added id's to Tile realizations + getters" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): added id's to Tile realizations + getters" />
+    <MESSAGE value="feat(main): create JSONReader and implement JSONReader.getJSONRoot(), JSONReader.getOrderedTileIds()" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): create JSONReader and implement JSONReader.getJSONRoot(), JSONReader.getOrderedTileIds()" />
   </component>
 </project>
