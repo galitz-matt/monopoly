@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="refactor(main): make Property fields final">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Main.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): Modify Property constructors for id and name fields">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GameBoard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AllTiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AllTiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,6 +43,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -54,6 +55,10 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.68187135",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
@@ -66,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698870984505</updated>
-      <workItem from="1698870985338" duration="5734000" />
+      <workItem from="1698870985338" duration="6889000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -84,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698874798660</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(main): Modify Property constructors for id and name fields">
+      <option name="closed" value="true" />
+      <created>1698939710308</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698939710308</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +106,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum" />
     <MESSAGE value="refactor(main): make Property fields final" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(main): make Property fields final" />
+    <MESSAGE value="feat(main): Modify Property constructors for id and name fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): Modify Property constructors for id and name fields" />
   </component>
 </project>

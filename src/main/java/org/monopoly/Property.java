@@ -23,6 +23,7 @@ public class Property {
         this.price = price;
         this.rent = rent;
         this.mortgageValue = mortgageValue;
+        this. constructionPrices = null;
     }
 
     public Property(String id, String name, PropertyType propertyType, int price, List<Integer> rent, int mortgageValue, List<Integer> constructionPrices) {
