@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): create ChanceCard">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/FreeParkingTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): write method signatures in Player, and create User realization">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -76,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1698870984505</updated>
-      <workItem from="1698870985338" duration="8274000" />
+      <workItem from="1698870985338" duration="9628000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -110,7 +105,31 @@
       <option name="project" value="LOCAL" />
       <updated>1698941126391</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat(main): create all Tile realizations">
+      <option name="closed" value="true" />
+      <created>1698942224717</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1698942224717</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(main): create Player interface">
+      <option name="closed" value="true" />
+      <created>1698942450236</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698942450236</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(main): write method signatures in Player, and create User realization">
+      <option name="closed" value="true" />
+      <created>1698942897433</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1698942897433</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +140,9 @@
     <MESSAGE value="refactor(main): make Property fields final" />
     <MESSAGE value="feat(main): Modify Property constructors for id and name fields" />
     <MESSAGE value="feat(main): create ChanceCard" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): create ChanceCard" />
+    <MESSAGE value="feat(main): create all Tile realizations" />
+    <MESSAGE value="feat(main): create Player interface" />
+    <MESSAGE value="feat(main): write method signatures in Player, and create User realization" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): write method signatures in Player, and create User realization" />
   </component>
 </project>

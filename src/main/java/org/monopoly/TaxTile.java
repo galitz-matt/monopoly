@@ -11,6 +11,6 @@ public class TaxTile implements Tile {
     }
 
     public void interact() {
-        //TODO: Take away tax from player
+        //TODO: charge tax to player
     }
 }
