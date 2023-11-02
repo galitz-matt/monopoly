@@ -2,36 +2,37 @@ package org.monopoly;
 
 import java.util.List;
 
-public class Property implements Tile {
+public class Property {
 
+    private final String id;
+    private final String name;
     private final PropertyType propertyType;
     private final int price;
     private final List<Integer> rent;
-    private final List<Integer> constructionPrices;
     private final int mortgageValue;
+    private final List<Integer> constructionPrices;
 
     private final int NO_MONOPOLY = 0;
     private final int WITH_MONOPOLY = 1;
     private final int WITH_HOTEL = 6;
 
-    public Property(PropertyType propertyType, int price, List<Integer> rent, int mortgageValue) {
+    public Property(String id, String name, PropertyType propertyType, int price, List<Integer> rent, int mortgageValue) {
+        this.id = id;
+        this.name = name;
         this.propertyType = propertyType;
         this.price = price;
         this.rent = rent;
         this.mortgageValue = mortgageValue;
-        this.constructionPrices = null;
     }
 
-    public Property(PropertyType propertyType, int price, List<Integer> rent, List<Integer> constructionPrices, int mortgageValue) {
+    public Property(String id, String name, PropertyType propertyType, int price, List<Integer> rent, int mortgageValue, List<Integer> constructionPrices) {
+        this.id = id;
+        this.name = name;
         this.propertyType = propertyType;
         this.price = price;
         this.rent = rent;
+        this.mortgageValue = mortgageValue;
         this.constructionPrices = constructionPrices;
-        this.mortgageValue = mortgageValue;
-    }
-
-    public void interact() {
-
     }
 
     public PropertyType getPropertyType() {
