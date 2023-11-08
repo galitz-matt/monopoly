@@ -17,4 +17,8 @@ public class PropertyTile implements Tile {
         return id;
     }
 
+    public Property getProperty() {
+        return property;
+    }
+
 }

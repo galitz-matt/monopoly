@@ -725,7 +725,7 @@
     {
       "name": "Income Tax",
       "id": "incometax",
-      "group": "Special",
+      "posistion": 4,
       "rel": {
         "Square": "Income Tax",
         "Probability % (Jail Short)": 2.3285,
@@ -756,7 +756,7 @@
     {
       "name": "Free Parking",
       "id": "freeparking",
-      "group": "Special",
+      "posistion": 20,
       "rel": {
         "Square": "Free Parking",
         "Probability % (Jail Short)": 2.8836,

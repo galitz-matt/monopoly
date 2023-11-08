@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): create JSONReader and implement JSONReader.getJSONRoot(), JSONReader.getOrderedTileIds()">
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): remove constructionPrices fields, (replaced with buildingCost)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/FreeParkingTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/FreeParkingTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AllTiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AllTiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1698870984505</updated>
       <workItem from="1698870985338" duration="13369000" />
-      <workItem from="1698957103320" duration="3065000" />
+      <workItem from="1698957103320" duration="5742000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -204,7 +211,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698958502251</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat(main): add buildingCost field to Property">
+      <option name="closed" value="true" />
+      <created>1698960368547</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1698960368547</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat(main): remove constructionPrices fields, (replaced with buildingCost)">
+      <option name="closed" value="true" />
+      <created>1698960583297</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1698960583297</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +246,8 @@
     <MESSAGE value="feat(main): implement CPU realization of Player" />
     <MESSAGE value="feat(main): added id's to Tile realizations + getters" />
     <MESSAGE value="feat(main): create JSONReader and implement JSONReader.getJSONRoot(), JSONReader.getOrderedTileIds()" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): create JSONReader and implement JSONReader.getJSONRoot(), JSONReader.getOrderedTileIds()" />
+    <MESSAGE value="feat(main): add buildingCost field to Property" />
+    <MESSAGE value="feat(main): remove constructionPrices fields, (replaced with buildingCost)" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): remove constructionPrices fields, (replaced with buildingCost)" />
   </component>
 </project>

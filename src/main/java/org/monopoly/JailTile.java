@@ -12,5 +12,9 @@ public class JailTile implements Tile {
         return "jail";
     }
 
+    public int getPosition() {
+        return 10;
+    }
+
     //TODO: Implement addToJail() and releaseFromJail() methods
 }

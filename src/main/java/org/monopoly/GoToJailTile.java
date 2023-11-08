@@ -9,4 +9,8 @@ public class GoToJailTile implements Tile {
     public String Id() {
         return "gotojail";
     }
+
+    public int getPosition() {
+        return 30;
+    }
 }

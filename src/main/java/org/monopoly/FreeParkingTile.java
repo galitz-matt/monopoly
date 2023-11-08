@@ -10,4 +10,7 @@ public class FreeParkingTile implements Tile {
         return "freeparking";
     }
 
+    public int getPosition() {
+        return 20;
+    }
 }

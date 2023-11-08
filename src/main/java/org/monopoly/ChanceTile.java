@@ -2,7 +2,11 @@ package org.monopoly;
 
 public class ChanceTile implements Tile {
 
-    //TODO: create chanceDeck field
+    private final int position;
+
+    public ChanceTile(int position) {
+        this.position = position;
+    }
 
     public void interact(Player player) {
         //TODO: draw card and do action
@@ -10,5 +14,9 @@ public class ChanceTile implements Tile {
 
     public String Id() {
         return "chance";
+    }
+
+    public int getPosition() {
+        return position;
     }
 }
