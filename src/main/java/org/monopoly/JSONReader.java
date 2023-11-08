@@ -33,5 +33,4 @@ public class JSONReader {
         }
         return tileIDs;
     }
-
 }
