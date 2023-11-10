@@ -7,7 +7,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+import java.util.function.Function;
 
+import static org.monopoly.PropertyType.*;
 public class JSONReader {
     private final JSONObject jsonRoot = getJSONRoot();
 
@@ -23,21 +26,53 @@ public class JSONReader {
 
     public List<String> getOrderedTileIDs() {
         var tilesIDsRoot = jsonRoot.getJSONArray("tiles");
-        var tileIDs = new ArrayList<String>();
-        for (int i = 0; i < tilesIDsRoot.length(); i++) {
-            var tileID = tilesIDsRoot.getJSONObject(i).get("id").toString();
-            tileIDs.add(tileID);
-        }
-        return tileIDs;
+        return IntStream.range(0, tilesIDsRoot.length())
+                .mapToObj(i -> tilesIDsRoot.getJSONObject(i).getString("id"))
+                .collect(Collectors.toList());
     }
 
     public Map<String, Property> getAllProperties() {
-        var properties = new HashMap<String, Property>();
         var rawProperties = jsonRoot.getJSONArray("properties");
-        for (int i = 0; i < rawProperties.length(); i++) {
-            var rawProperty = rawProperties.getJSONObject(0);
+        return IntStream.range(0, rawProperties.length())
+                .mapToObj(i -> buildProperty(rawProperties.getJSONObject(i)))
+                .collect(Collectors.toMap(Property::ID, Function.identity()));
+    }
 
-        }
-        return properties;
+    private Property buildProperty(JSONObject rawProperty) {
+        var propertyBuilder = new PropertyBuilder();
+        propertyBuilder.setID(rawProperty.getString("id"));
+        propertyBuilder.setName(rawProperty.getString("name"));
+        propertyBuilder.setPropertyType(parseType(rawProperty.getString("group")));
+        var price = rawProperty.getInt("price");
+        propertyBuilder.setPrice(price);
+        propertyBuilder.setMortgageValue(price / 2);
+        var rent = parseRentList(rawProperty.getInt("rent"), rawProperty.getJSONArray("multipliedrent"));
+        propertyBuilder.setRentList(rent);
+        propertyBuilder.setBuildCost(rawProperty.getInt("housecost"));
+        return propertyBuilder.getProperty();
+    }
+
+    private PropertyType parseType(String group) {
+        return switch (group) {
+            case "purple" -> BROWN;
+            case "lightgreen" -> GRAY;
+            case "Violet" -> PINK;
+            case "Orange" -> ORANGE;
+            case "Red" -> RED;
+            case "Yellow" -> YELLOW;
+            case "darkgreen" -> GREEN;
+            case "darkblue" -> BLUE;
+            case "Utilities" -> UTILITY;
+            case "Railroad" -> RAILROAD;
+            default -> null;
+        };
+    }
+
+    private List<Integer> parseRentList(int rent, JSONArray multipliedRent) {
+        var rentList = new ArrayList<>(List.of(rent));
+        rentList.addAll(IntStream.range(0, multipliedRent.length())
+                .mapToObj(multipliedRent::getInt)
+                .toList());
+        return rentList;
     }
 }

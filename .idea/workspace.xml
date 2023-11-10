@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="chore(main): delete unused classes">
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): create PropertyBuilder">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AllTiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AllTiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <workItem from="1698870985338" duration="13369000" />
       <workItem from="1698957103320" duration="5742000" />
       <workItem from="1699403405876" duration="245000" />
-      <workItem from="1699653310250" duration="1524000" />
+      <workItem from="1699653310250" duration="5054000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -247,7 +247,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699653443794</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat(main): partially implement JSONREADER.getAllProperties; need to create PropertyBuilder">
+      <option name="closed" value="true" />
+      <created>1699654929289</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1699654929289</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat(main): create PropertyBuilder">
+      <option name="closed" value="true" />
+      <created>1699656172604</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1699656172604</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +287,8 @@
     <MESSAGE value="feat(main): add getPosition() method to tiles and position field where appropriate" />
     <MESSAGE value="feat(main): create JSONReader" />
     <MESSAGE value="chore(main): delete unused classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(main): delete unused classes" />
+    <MESSAGE value="feat(main): partially implement JSONREADER.getAllProperties; need to create PropertyBuilder" />
+    <MESSAGE value="feat(main): create PropertyBuilder" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): create PropertyBuilder" />
   </component>
 </project>

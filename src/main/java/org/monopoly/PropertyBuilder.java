@@ -2,20 +2,18 @@ package org.monopoly;
 
 import java.util.List;
 
-import static org.monopoly.PropertyType.*;
-
 public class PropertyBuilder {
 
     private String id;
     private String name;
     private PropertyType propertyType;
     private int price;
-    private List<Integer> rent;
+    private List<Integer> rentList;
     private int mortgageValue;
     private int buildingCost;
 
     public Property getProperty() {
-        return new Property(id, name, propertyType, price, rent, mortgageValue, buildingCost);
+        return new Property(id, name, propertyType, price, rentList, mortgageValue, buildingCost);
     }
 
     public void setID(String id) {
@@ -34,8 +32,8 @@ public class PropertyBuilder {
         this.price = price;
     }
 
-    public void setRent(List<Integer> rent) {
-        this.rent = rent;
+    public void setRentList(List<Integer> rentList) {
+        this.rentList = rentList;
     }
 
     public void setMortgageValue(int mortgageValue) {

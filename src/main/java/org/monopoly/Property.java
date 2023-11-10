@@ -1,7 +1,6 @@
 package org.monopoly;
 
 import java.util.List;
-import java.util.Optional;
 
 public class Property {
 
@@ -9,7 +8,7 @@ public class Property {
     private final String name;
     private final PropertyType propertyType;
     private final int price;
-    private final List<Integer> rent;
+    private final List<Integer> rentList;
     private final int mortgageValue;
     private final int buildingCost;
     private final int NO_MONOPOLY = 0;
@@ -17,17 +16,17 @@ public class Property {
     private final int WITH_HOTEL = 6;
 
     public Property(String id, String name, PropertyType propertyType, int price,
-                    List<Integer> rent, int mortgageValue, int buildingCost) {
+                    List<Integer> rentList, int mortgageValue, int buildingCost) {
         this.id = id;
         this.name = name;
         this.propertyType = propertyType;
         this.price = price;
-        this.rent = rent;
+        this.rentList = rentList;
         this.mortgageValue = mortgageValue;
         this.buildingCost = buildingCost;
     }
 
-    public String Id() {
+    public String ID() {
         return id;
     }
 
@@ -51,12 +50,12 @@ public class Property {
         return mortgageValue;
     }
 
-    public int getRent() {
-        return rent.get(NO_MONOPOLY);
+    public int getRentList() {
+        return rentList.get(NO_MONOPOLY);
     }
 
     public int getRentWithMonopoly() {
-        return rent.get(WITH_MONOPOLY);
+        return rentList.get(WITH_MONOPOLY);
     }
 
     public int getRentWithHouses(int numHouses) {
@@ -64,10 +63,10 @@ public class Property {
             var errorMessage = String.format("Invalid number of houses: %d", numHouses);
             throw new ArrayIndexOutOfBoundsException(errorMessage);
         }
-        return rent.get(WITH_MONOPOLY + numHouses);
+        return rentList.get(WITH_MONOPOLY + numHouses);
     }
 
     public int getRentWithHotel() {
-        return rent.get(WITH_HOTEL);
+        return rentList.get(WITH_HOTEL);
     }
 }
