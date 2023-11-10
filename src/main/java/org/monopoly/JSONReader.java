@@ -5,17 +5,14 @@ import org.json.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class JSONReader {
-
-    private final String filePath = "C:\\Users\\16097\\Documents\\projects\\monopoly\\src\\main\\resources\\AllTiles.json";
     private final JSONObject jsonRoot = getJSONRoot();
 
     private JSONObject getJSONRoot() {
-        try (var bufferedReader = new BufferedReader(new FileReader(filePath))) {
+        try (var bufferedReader = new BufferedReader(new FileReader("AllTiles.json"))) {
             var fileContent = bufferedReader.lines().collect(Collectors.joining("\n"));
             return new JSONObject(fileContent);
         }
@@ -32,5 +29,15 @@ public class JSONReader {
             tileIDs.add(tileID);
         }
         return tileIDs;
+    }
+
+    public Map<String, Property> getAllProperties() {
+        var properties = new HashMap<String, Property>();
+        var rawProperties = jsonRoot.getJSONArray("properties");
+        for (int i = 0; i < rawProperties.length(); i++) {
+            var rawProperty = rawProperties.getJSONObject(0);
+
+        }
+        return properties;
     }
 }

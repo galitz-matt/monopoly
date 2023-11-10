@@ -1,6 +1,7 @@
 package org.monopoly;
 
 import java.util.List;
+import java.util.Optional;
 
 public class Property {
 
@@ -9,51 +10,31 @@ public class Property {
     private final PropertyType propertyType;
     private final int price;
     private final List<Integer> rent;
-    private int buildingCost;
+    private final Optional<Integer> buildingCost;
     private final int mortgageValue;
     private final int NO_MONOPOLY = 0;
     private final int WITH_MONOPOLY = 1;
     private final int WITH_HOTEL = 6;
 
     public Property(String id, String name, PropertyType propertyType, int price,
-                    List<Integer> rent, int mortgageValue, List<Integer> constructionPrices) {
+                    List<Integer> rent, int mortgageValue) {
         this.id = id;
         this.name = name;
         this.propertyType = propertyType;
         this.price = price;
         this.rent = rent;
         this.mortgageValue = mortgageValue;
-        setBuildingCost();
+        this.buildingCost = buildingCost();
     }
 
-    public Property(String id, String name, PropertyType propertyType, int price, List<Integer> rent, int mortgageValue) {
-        this.id = id;
-        this.name = name;
-        this.propertyType = propertyType;
-        this.price = price;
-        this.rent = rent;
-        this.mortgageValue = mortgageValue;
-    }
-
-    public void setBuildingCost() {
-        switch(getPropertyType()) {
-            case BROWN:
-            case GRAY:
-                buildingCost = 50;
-                break;
-            case PINK:
-            case ORANGE:
-                buildingCost = 100;
-                break;
-            case RED:
-            case YELLOW:
-                buildingCost = 150;
-                break;
-            case GREEN:
-            case BLUE:
-                buildingCost = 200;
-                break;
-        }
+    private Optional<Integer> buildingCost() {
+        return switch (this.propertyType) {
+            case BROWN, GRAY -> Optional.of(50);
+            case PINK, ORANGE -> Optional.of(100);
+            case RED, YELLOW -> Optional.of(150);
+            case GREEN, BLUE -> Optional.of(200);
+            default -> Optional.empty();
+        };
     }
 
     public String Id() {
@@ -72,7 +53,7 @@ public class Property {
         return price;
     }
 
-    public int getBuildingCost() {
+    public Optional<Integer> getBuildingCost() {
         return buildingCost;
     }
 
