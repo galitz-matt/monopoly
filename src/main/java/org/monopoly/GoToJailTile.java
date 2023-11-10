@@ -6,7 +6,7 @@ public class GoToJailTile implements Tile {
         //Send player to jail
     }
 
-    public String Id() {
+    public String ID() {
         return "gotojail";
     }
 

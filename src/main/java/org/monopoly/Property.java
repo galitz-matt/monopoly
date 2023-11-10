@@ -10,31 +10,21 @@ public class Property {
     private final PropertyType propertyType;
     private final int price;
     private final List<Integer> rent;
-    private final Optional<Integer> buildingCost;
     private final int mortgageValue;
+    private final int buildingCost;
     private final int NO_MONOPOLY = 0;
     private final int WITH_MONOPOLY = 1;
     private final int WITH_HOTEL = 6;
 
     public Property(String id, String name, PropertyType propertyType, int price,
-                    List<Integer> rent, int mortgageValue) {
+                    List<Integer> rent, int mortgageValue, int buildingCost) {
         this.id = id;
         this.name = name;
         this.propertyType = propertyType;
         this.price = price;
         this.rent = rent;
         this.mortgageValue = mortgageValue;
-        this.buildingCost = buildingCost();
-    }
-
-    private Optional<Integer> buildingCost() {
-        return switch (this.propertyType) {
-            case BROWN, GRAY -> Optional.of(50);
-            case PINK, ORANGE -> Optional.of(100);
-            case RED, YELLOW -> Optional.of(150);
-            case GREEN, BLUE -> Optional.of(200);
-            default -> Optional.empty();
-        };
+        this.buildingCost = buildingCost;
     }
 
     public String Id() {
@@ -53,7 +43,7 @@ public class Property {
         return price;
     }
 
-    public Optional<Integer> getBuildingCost() {
+    public int getBuildingCost() {
         return buildingCost;
     }
 

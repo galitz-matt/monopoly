@@ -16,7 +16,7 @@ public class TaxTile implements Tile {
         //TODO: charge tax to player
     }
 
-    public String Id() {
+    public String ID() {
         return id;
     }
     public int Tax() {

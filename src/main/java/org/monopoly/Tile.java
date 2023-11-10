@@ -4,5 +4,5 @@ public interface Tile {
 
     void interact(Player player);
 
-    String Id();
+    String ID();
 }

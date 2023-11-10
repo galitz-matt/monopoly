@@ -8,7 +8,7 @@ public class JailTile implements Tile {
         //TODO: if in Jail, attempt to roll doubles, release player if stayed 3 turns
     }
 
-    public String Id() {
+    public String ID() {
         return "jail";
     }
 

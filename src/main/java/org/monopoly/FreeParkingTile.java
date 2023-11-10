@@ -6,7 +6,7 @@ public class FreeParkingTile implements Tile {
         //TODO: do nothing
     }
 
-    public String Id() {
+    public String ID() {
         return "freeparking";
     }
 

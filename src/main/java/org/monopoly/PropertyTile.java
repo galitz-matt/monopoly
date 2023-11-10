@@ -13,7 +13,7 @@ public class PropertyTile implements Tile {
         //TODO: buy or auction
     }
 
-    public String Id() {
+    public String ID() {
         return id;
     }
 

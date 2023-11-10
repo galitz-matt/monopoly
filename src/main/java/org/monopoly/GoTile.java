@@ -6,7 +6,7 @@ public class GoTile implements Tile {
         //TODO: Give 200 to player if passed
     }
 
-    public String Id() {
+    public String ID() {
         return "go";
     }
 

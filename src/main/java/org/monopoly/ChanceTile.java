@@ -12,7 +12,7 @@ public class ChanceTile implements Tile {
         //TODO: draw card and do action
     }
 
-    public String Id() {
+    public String ID() {
         return "chance";
     }
 
