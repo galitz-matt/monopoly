@@ -5,8 +5,8 @@
       "id": "mediterraneanave",
       "position": 2,
       "price": 60,
-      "rent": 2,
-      "multpliedrent": [
+      "rent": [
+        2,
         10,
         30,
         90,
@@ -34,8 +34,8 @@
       "id": "balticave",
       "position": 4,
       "price": 60,
-      "rent": 4,
-      "multpliedrent": [
+      "rent": [
+        4,
         20,
         60,
         180,
@@ -63,8 +63,8 @@
       "id": "orientalave",
       "position": 7,
       "price": 100,
-      "rent": 6,
-      "multpliedrent": [
+      "rent": [
+        6,
         30,
         90,
         270,
@@ -91,8 +91,8 @@
       "id": "vermontave",
       "position": 9,
       "price": 100,
-      "rent": 6,
-      "multpliedrent": [
+      "rent": [
+        6,
         30,
         90,
         270,
@@ -119,8 +119,8 @@
       "id": "connecticutave",
       "position": 10,
       "price": 120,
-      "rent": 8,
-      "multpliedrent": [
+      "rent": [
+        8,
         40,
         100,
         300,
@@ -147,8 +147,8 @@
       "id": "stcharlesplace",
       "position": 12,
       "price": 140,
-      "rent": 10,
-      "multpliedrent": [
+      "rent": [
+        10,
         50,
         150,
         450,
@@ -175,8 +175,8 @@
       "id": "statesave",
       "position": 14,
       "price": 140,
-      "rent": 10,
-      "multpliedrent": [
+      "rent": [
+        10,
         50,
         150,
         450,
@@ -203,8 +203,8 @@
       "id": "virginiaave",
       "position": 15,
       "price": 160,
-      "rent": 12,
-      "multpliedrent": [
+      "rent": [
+        12,
         60,
         180,
         500,
@@ -231,8 +231,8 @@
       "id": "stjamesplace",
       "position": 17,
       "price": 180,
-      "rent": 14,
-      "multpliedrent": [
+      "rent": [
+        14,
         70,
         200,
         550,
@@ -259,8 +259,8 @@
       "id": "tennesseeave",
       "position": 19,
       "price": 180,
-      "rent": 14,
-      "multpliedrent": [
+      "rent": [
+        14,
         70,
         200,
         550,
@@ -287,8 +287,8 @@
       "id": "newyorkave",
       "position": 20,
       "price": 200,
-      "rent": 16,
-      "multpliedrent": [
+      "rent": [
+        16,
         80,
         220,
         600,
@@ -315,8 +315,8 @@
       "id": "kentuckyave",
       "position": 22,
       "price": 220,
-      "rent": 18,
-      "multpliedrent": [
+      "rent": [
+        18,
         90,
         250,
         700,
@@ -343,8 +343,8 @@
       "id": "indianaave",
       "position": 24,
       "price": 220,
-      "rent": 18,
-      "multpliedrent": [
+      "rent": [
+        18,
         90,
         250,
         700,
@@ -371,8 +371,8 @@
       "id": "illinoisave",
       "position": 25,
       "price": 240,
-      "rent": 20,
-      "multpliedrent": [
+      "rent": [
+        20,
         100,
         300,
         750,
@@ -399,8 +399,8 @@
       "id": "atlanticave",
       "position": 27,
       "price": 260,
-      "rent": 22,
-      "multpliedrent": [
+      "rent": [
+        22,
         110,
         330,
         800,
@@ -427,8 +427,8 @@
       "id": "ventnorave",
       "position": 28,
       "price": 260,
-      "rent": 22,
-      "multpliedrent": [
+      "rent": [
+        22,
         110,
         330,
         800,
@@ -455,8 +455,8 @@
       "id": "marvingardens",
       "position": 30,
       "price": 280,
-      "rent": 22,
-      "multpliedrent": [
+      "rent": [
+        22,
         120,
         360,
         850,
@@ -483,8 +483,8 @@
       "id": "pacificave",
       "position": 32,
       "price": 300,
-      "rent": 26,
-      "multpliedrent": [
+      "rent": [
+        26,
         130,
         390,
         900,
@@ -511,8 +511,8 @@
       "id": "northcarolinaave",
       "position": 33,
       "price": 300,
-      "rent": 26,
-      "multpliedrent": [
+      "rent": [
+        26,
         130,
         390,
         900,
@@ -539,8 +539,8 @@
       "id": "pennsylvaniaave",
       "position": 35,
       "price": 320,
-      "rent": 28,
-      "multpliedrent": [
+      "rent": [
+        28,
         150,
         450,
         1000,
@@ -567,8 +567,8 @@
       "id": "parkplace",
       "position": 38,
       "price": 350,
-      "rent": 35,
-      "multpliedrent": [
+      "rent": [
+        35,
         175,
         500,
         1100,
@@ -595,8 +595,8 @@
       "id": "boardwalk",
       "position": 40,
       "price": 400,
-      "rent": 50,
-      "multpliedrent": [
+      "rent": [
+        50,
         200,
         600,
         1400,
@@ -623,6 +623,8 @@
       "id": "electriccompany",
       "position": 13,
       "price": 150,
+      "rent": [4, 10],
+      "housecost": 0,
       "group": "Utilities",
       "ownedby": -1,
       "mortgaged": false,
@@ -640,6 +642,8 @@
       "id": "waterworks",
       "position": 29,
       "price": 150,
+      "rent": [4, 10],
+      "housecost": 0,
       "group": "Utilities",
       "ownedby": -1,
       "mortgaged": false,
@@ -657,6 +661,8 @@
       "id": "readingrailroad",
       "position": 6,
       "price": 200,
+      "rent": [25, 50, 100, 200],
+      "housecost": 0,
       "group": "Railroad",
       "ownedby": -1,
       "mortgaged": false,
@@ -675,6 +681,8 @@
       "id": "pennsylvaniarailroad",
       "position": 16,
       "price": 200,
+      "rent": [25, 50, 100, 200],
+      "housecost": 0,
       "group": "Railroad",
       "ownedby": -1,
       "mortgaged": false,
@@ -692,6 +700,8 @@
       "id": "borailroad",
       "position": 26,
       "price": 200,
+      "rent": [25, 50, 100, 200],
+      "housecost": 0,
       "group": "Railroad",
       "ownedby": -1,
       "mortgaged": false,
@@ -703,12 +713,16 @@
       "id": "shortlinerailroad",
       "position": 36,
       "price": 200,
+      "rent": [25, 50, 100, 200],
+      "housecost": 0,
       "group": "Railroad",
       "ownedby": -1,
       "mortgaged": false,
       "oprice": 200,
       "averageProbability": 2.3609500000000002
-    },
+    }
+  ],
+  "otherTiles": [
     {
       "name": "Go",
       "id": "go",

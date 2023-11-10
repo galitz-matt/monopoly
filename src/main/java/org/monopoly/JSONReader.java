@@ -12,10 +12,14 @@ import java.util.function.Function;
 
 import static org.monopoly.PropertyType.*;
 public class JSONReader {
-    private final JSONObject jsonRoot = getJSONRoot();
+    private final JSONObject jsonRoot;
+
+    public JSONReader() {
+        this.jsonRoot = getJSONRoot();
+    }
 
     private JSONObject getJSONRoot() {
-        try (var bufferedReader = new BufferedReader(new FileReader("AllTiles.json"))) {
+        try (var bufferedReader = new BufferedReader(new FileReader("C:\\Users\\16097\\Documents\\projects\\monopoly\\src\\main\\resources\\AllTiles.json"))) {
             var fileContent = bufferedReader.lines().collect(Collectors.joining("\n"));
             return new JSONObject(fileContent);
         }
@@ -24,14 +28,14 @@ public class JSONReader {
         }
     }
 
-    public List<String> getOrderedTileIDs() {
+    public List<String> getOrderedTilesByIDs() {
         var tilesIDsRoot = jsonRoot.getJSONArray("tiles");
         return IntStream.range(0, tilesIDsRoot.length())
                 .mapToObj(i -> tilesIDsRoot.getJSONObject(i).getString("id"))
                 .collect(Collectors.toList());
     }
 
-    public Map<String, Property> getAllProperties() {
+    public Map<String, Property> getAllPropertiesByID() {
         var rawProperties = jsonRoot.getJSONArray("properties");
         return IntStream.range(0, rawProperties.length())
                 .mapToObj(i -> buildProperty(rawProperties.getJSONObject(i)))
@@ -46,7 +50,7 @@ public class JSONReader {
         var price = rawProperty.getInt("price");
         propertyBuilder.setPrice(price);
         propertyBuilder.setMortgageValue(price / 2);
-        var rent = parseRentList(rawProperty.getInt("rent"), rawProperty.getJSONArray("multipliedrent"));
+        var rent = parseRentList(rawProperty.getJSONArray("rent"));
         propertyBuilder.setRentList(rent);
         propertyBuilder.setBuildCost(rawProperty.getInt("housecost"));
         return propertyBuilder.getProperty();
@@ -68,11 +72,10 @@ public class JSONReader {
         };
     }
 
-    private List<Integer> parseRentList(int rent, JSONArray multipliedRent) {
-        var rentList = new ArrayList<>(List.of(rent));
-        rentList.addAll(IntStream.range(0, multipliedRent.length())
-                .mapToObj(multipliedRent::getInt)
+    private List<Integer> parseRentList(JSONArray rent) {
+        return new ArrayList<>(IntStream.range(0, rent.length())
+                .mapToObj(rent::getInt)
                 .toList());
-        return rentList;
     }
+
 }

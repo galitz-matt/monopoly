@@ -11,9 +11,6 @@ public class Property {
     private final List<Integer> rentList;
     private final int mortgageValue;
     private final int buildingCost;
-    private final int NO_MONOPOLY = 0;
-    private final int WITH_MONOPOLY = 1;
-    private final int WITH_HOTEL = 6;
 
     public Property(String id, String name, PropertyType propertyType, int price,
                     List<Integer> rentList, int mortgageValue, int buildingCost) {
@@ -50,23 +47,8 @@ public class Property {
         return mortgageValue;
     }
 
-    public int getRentList() {
-        return rentList.get(NO_MONOPOLY);
+    public List<Integer> getRentList() {
+        return rentList;
     }
 
-    public int getRentWithMonopoly() {
-        return rentList.get(WITH_MONOPOLY);
-    }
-
-    public int getRentWithHouses(int numHouses) {
-        if (numHouses < 0 || numHouses > 4) {
-            var errorMessage = String.format("Invalid number of houses: %d", numHouses);
-            throw new ArrayIndexOutOfBoundsException(errorMessage);
-        }
-        return rentList.get(WITH_MONOPOLY + numHouses);
-    }
-
-    public int getRentWithHotel() {
-        return rentList.get(WITH_HOTEL);
-    }
 }
