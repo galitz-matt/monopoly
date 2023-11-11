@@ -12,7 +12,7 @@ public class PropertyBuilder {
     private int mortgageValue;
     private int buildingCost;
 
-    public Property getProperty() {
+    public Property build() {
         return new Property(id, name, propertyType, price, rentList, mortgageValue, buildingCost);
     }
 

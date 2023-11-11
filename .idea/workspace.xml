@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="docs(main): add key-values to JSON">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Action.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestCard.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="style(main): move enum types around">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CardBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceCard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestCard.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +85,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.JSONReaderTest.getOrderedTilesByIDTest">
+  <component name="RunManager" selected="Gradle.JSONReaderTest.getChanceCardsTest">
     <configuration name="JSONReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.monopoly.JSONReader" />
       <module name="monopoly.main" />
@@ -124,6 +126,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;JSONReaderTest.getAllPropertiesByIDTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="JSONReaderTest.getChanceCardsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;JSONReaderTest.getChanceCardsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,6 +208,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JSONReaderTest.getChanceCardsTest" />
         <item itemvalue="Gradle.JSONReaderTest.getOrderedTilesByIDTest" />
         <item itemvalue="Gradle.JSONReaderTest.getAllPropertiesByIDTest" />
         <item itemvalue="Application.JSONReader" />
@@ -200,7 +227,7 @@
       <workItem from="1698870985338" duration="13369000" />
       <workItem from="1698957103320" duration="5742000" />
       <workItem from="1699403405876" duration="245000" />
-      <workItem from="1699653310250" duration="8583000" />
+      <workItem from="1699653310250" duration="10332000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -370,7 +397,23 @@
       <option name="project" value="LOCAL" />
       <updated>1699660786634</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat(main): create Card interface w/ realizations">
+      <option name="closed" value="true" />
+      <created>1699661929987</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1699661929987</updated>
+    </task>
+    <task id="LOCAL-00023" summary="style(main): move enum types around">
+      <option name="closed" value="true" />
+      <created>1699661983664</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1699661983664</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,6 +441,8 @@
     <MESSAGE value="feat(main): create PropertyBuilder" />
     <MESSAGE value="feat(main): implement getAllProperties()&#10;perf(main): optimize w/ streams" />
     <MESSAGE value="docs(main): add key-values to JSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs(main): add key-values to JSON" />
+    <MESSAGE value="feat(main): create Card interface w/ realizations" />
+    <MESSAGE value="style(main): move enum types around" />
+    <option name="LAST_COMMIT_MESSAGE" value="style(main): move enum types around" />
   </component>
 </project>

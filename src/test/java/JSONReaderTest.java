@@ -21,4 +21,10 @@ public class JSONReaderTest {
         var tileIDs = jsonReader.getOrderedTilesByIDs();
         System.out.println(tileIDs);
     }
+
+    @Test
+    public void getChanceCardsTest() {
+        var chanceCards = jsonReader.getChanceCards();
+        System.out.println(chanceCards);
+    }
 }

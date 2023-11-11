@@ -11,6 +11,7 @@ import java.util.stream.IntStream;
 import java.util.function.Function;
 
 import static org.monopoly.PropertyType.*;
+import static org.monopoly.Action.*;
 public class JSONReader {
     private final JSONObject jsonRoot;
 
@@ -53,11 +54,11 @@ public class JSONReader {
         var rent = parseRentList(rawProperty.getJSONArray("rent"));
         propertyBuilder.setRentList(rent);
         propertyBuilder.setBuildCost(rawProperty.getInt("housecost"));
-        return propertyBuilder.getProperty();
+        return propertyBuilder.build();
     }
 
-    private PropertyType parseType(String group) {
-        return switch (group) {
+    private PropertyType parseType(String rawType) {
+        return switch (rawType) {
             case "purple" -> BROWN;
             case "lightgreen" -> GRAY;
             case "Violet" -> PINK;
@@ -78,4 +79,35 @@ public class JSONReader {
                 .toList());
     }
 
+    public List<Card> getChanceCards() {
+        var rawCards = jsonRoot.getJSONArray("chance");
+        return new ArrayList<>(IntStream.range(0, rawCards.length())
+                .mapToObj(i -> buildCard(rawCards.getJSONObject(i)))
+                .toList());
+    }
+
+    public Card buildCard(JSONObject rawCard) {
+        var cardBuilder = new CardBuilder();
+        cardBuilder.setPrompt(rawCard.getString("title"));
+        var action = parseAction(rawCard.getString("action"));
+        cardBuilder.setAction(action);
+        cardBuilder.setID(rawCard.has("tileid") ? rawCard.getString("tileid") : null);
+        cardBuilder.setAmount(rawCard.has("amount") ? rawCard.getInt("amount") : 0);
+        return cardBuilder.build();
+    }
+
+    private Action parseAction(String rawAction) {
+        return switch (rawAction) {
+            case "move" -> MOVE;
+            case "movenearest" -> MOVE_NEAREST;
+            case "addfunds" -> COLLECT;
+            case "jail" -> JAIL;
+            case "propertycharges" -> PROPERTY_CHARGE;
+            case "removefunds" -> CHARGE;
+            case "removefundstoplayers" -> GIVE_TO_PLAYERS;
+            case "getout" -> GET_OUT_OF_JAIL;
+            case "addfundsfromplayers" -> GET_FROM_PLAYERS;
+            default -> null;
+        };
+    }
 }
