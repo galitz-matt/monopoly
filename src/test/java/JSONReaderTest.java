@@ -23,8 +23,14 @@ public class JSONReaderTest {
     }
 
     @Test
-    public void getChanceCardsTest() {
-        var chanceCards = jsonReader.getChanceCards();
+    public void getCards_chance_test() {
+        var chanceCards = jsonReader.getCards("chance");
         System.out.println(chanceCards);
+    }
+
+    @Test
+    public void getCards_communityChest_test() {
+        var communityChestCards = jsonReader.getCards("communitychest");
+        System.out.println(communityChestCards);
     }
 }

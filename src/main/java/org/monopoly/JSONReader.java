@@ -79,8 +79,8 @@ public class JSONReader {
                 .toList());
     }
 
-    public List<Card> getChanceCards() {
-        var rawCards = jsonRoot.getJSONArray("chance");
+    public List<Card> getCards(String cardType) {
+        var rawCards = jsonRoot.getJSONArray(cardType);
         return new ArrayList<>(IntStream.range(0, rawCards.length())
                 .mapToObj(i -> buildCard(rawCards.getJSONObject(i)))
                 .toList());
