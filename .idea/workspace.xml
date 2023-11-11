@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): implement getAllProperties()&#10;perf(main): optimize w/ streams">
-      <change afterPath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="docs(main): add key-values to JSON">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestCard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AllTiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AllTiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +200,7 @@
       <workItem from="1698870985338" duration="13369000" />
       <workItem from="1698957103320" duration="5742000" />
       <workItem from="1699403405876" duration="245000" />
-      <workItem from="1699653310250" duration="7432000" />
+      <workItem from="1699653310250" duration="8583000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -361,7 +362,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699658561558</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="docs(main): add key-values to JSON">
+      <option name="closed" value="true" />
+      <created>1699660786634</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1699660786634</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,6 +397,7 @@
     <MESSAGE value="feat(main): partially implement JSONREADER.getAllProperties; need to create PropertyBuilder" />
     <MESSAGE value="feat(main): create PropertyBuilder" />
     <MESSAGE value="feat(main): implement getAllProperties()&#10;perf(main): optimize w/ streams" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): implement getAllProperties()&#10;perf(main): optimize w/ streams" />
+    <MESSAGE value="docs(main): add key-values to JSON" />
+    <option name="LAST_COMMIT_MESSAGE" value="docs(main): add key-values to JSON" />
   </component>
 </project>
