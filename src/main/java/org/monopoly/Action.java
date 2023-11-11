@@ -1,0 +1,5 @@
+package org.monopoly;
+
+public enum Action {
+    MOVE, MOVE_NEAREST, COLLECT, GET_OUT_OF_JAIL, JAIL, CHARGE, PROPERTY_CHARGE, GIVE_TO_PLAYERS, GET_FROM_PLAYERS
+}

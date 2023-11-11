@@ -11,8 +11,8 @@ public class JSONReaderTest {
         jsonReader = new JSONReader();
     }
     @Test
-    public void getAllPropertiesByIDTest() {
-        var properties = jsonReader.getAllPropertiesByID();
+    public void getAllProperties() {
+        var properties = jsonReader.getAllProperties();
         properties.forEach((id,property) -> System.out.println(id));
     }
 

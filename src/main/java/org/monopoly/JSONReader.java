@@ -35,7 +35,7 @@ public class JSONReader {
                 .collect(Collectors.toList());
     }
 
-    public Map<String, Property> getAllPropertiesByID() {
+    public Map<String, Property> getAllProperties() {
         var rawProperties = jsonRoot.getJSONArray("properties");
         return IntStream.range(0, rawProperties.length())
                 .mapToObj(i -> buildProperty(rawProperties.getJSONObject(i)))
