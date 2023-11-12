@@ -955,8 +955,7 @@
     },
     {
       "title": "Get Out of Jail Free",
-      "action": "jail",
-      "subaction": "getout"
+      "action": "getout"
     },
     {
       "title": "Go to Jail - Go directly to jail - Do not pass Go - Do not collect $200",

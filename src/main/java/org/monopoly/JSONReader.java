@@ -29,7 +29,7 @@ public class JSONReader {
         }
     }
 
-    public List<String> getOrderedTilesByIDs() {
+    public List<String> getOrderedIDs() {
         var tilesIDsRoot = jsonRoot.getJSONArray("tiles");
         return IntStream.range(0, tilesIDsRoot.length())
                 .mapToObj(i -> tilesIDsRoot.getJSONObject(i).getString("id"))

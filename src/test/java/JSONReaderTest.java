@@ -1,6 +1,7 @@
+import org.monopoly.JSONReader;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.monopoly.JSONReader;
 
 public class JSONReaderTest {
 
@@ -18,7 +19,7 @@ public class JSONReaderTest {
 
     @Test
     public void getOrderedTilesByIDTest() {
-        var tileIDs = jsonReader.getOrderedTilesByIDs();
+        var tileIDs = jsonReader.getOrderedIDs();
         System.out.println(tileIDs);
     }
 
