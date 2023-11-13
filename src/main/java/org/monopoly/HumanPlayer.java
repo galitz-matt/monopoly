@@ -20,19 +20,19 @@ public class HumanPlayer implements Player {
         return currentTile;
     }
     public int getBalance() {
-        return 0;
+        return balance;
     }
     public void charge(int amount) {
-
+        //TODO: account for if balance < amount
     }
     public void give(int amount) {
-
+        balance += amount;
     }
 
     public void movePlayerTo(Tile destination) {
         currentTile = destination;
     }
     public boolean isInJail() {
-        return false;
+        return isInJail;
     }
 }
