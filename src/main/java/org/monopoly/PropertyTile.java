@@ -3,10 +3,12 @@ package org.monopoly;
 public class PropertyTile implements Tile {
     private final String id;
     private final Property property;
+    private final int position;
 
-    public PropertyTile(String id, Property property) {
+    public PropertyTile(String id, Property property, int position) {
         this.id = id;
         this.property = property;
+        this.position = position;
     }
     public void interact(Player player) {
         //TODO: buy or auction
@@ -19,6 +21,8 @@ public class PropertyTile implements Tile {
     public Property getProperty() {
         return property;
     }
+
+    public int getPosition() { return position; }
 
     public String getName() {
         return property.getName();

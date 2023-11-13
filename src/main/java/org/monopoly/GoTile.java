@@ -11,4 +11,6 @@ public class GoTile implements Tile {
     }
 
     public String getName() { return "Go"; }
+
+    public int getPosition() { return 0; }
 }

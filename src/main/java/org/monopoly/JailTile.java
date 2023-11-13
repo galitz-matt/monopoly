@@ -14,5 +14,7 @@ public class JailTile implements Tile {
 
     public String getName() { return "Jail"; }
 
+    public int getPosition() { return 10; }
+
     //TODO: Implement addToJail() and releaseFromJail() methods
 }

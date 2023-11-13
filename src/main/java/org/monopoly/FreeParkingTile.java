@@ -11,4 +11,6 @@ public class FreeParkingTile implements Tile {
     }
 
     public String getName() { return "Free Parking"; }
+
+    public int getPosition() { return 20; }
 }

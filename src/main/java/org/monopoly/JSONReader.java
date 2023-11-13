@@ -75,7 +75,7 @@ public class JSONReader {
         propertyBuilder.setRentList(rent);
         propertyBuilder.setBuildCost(rawProperty.getInt("housecost"));
         var property = propertyBuilder.build();
-        return new PropertyTile(property.ID(), property);
+        return new PropertyTile(property.ID(), property, rawProperty.getInt("position"));
     }
 
     private Tile buildNonPropertyTile(JSONObject rawTile) {
