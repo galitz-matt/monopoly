@@ -9,13 +9,13 @@ public class Chance {
     private int draws = 0;
     private final int DECK_SIZE = 16;
 
-    private Chance(JSONReader jsonReader) {
-        deck = jsonReader.getCards("chance");
+    private Chance() {
+        deck = new JSONReader().getCards("chance");
     }
 
     public static Chance getInstance() {
         if (instance == null) {
-            instance = new Chance(new JSONReader());
+            instance = new Chance();
         }
         return instance;
     }
