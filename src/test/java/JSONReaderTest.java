@@ -13,7 +13,7 @@ public class JSONReaderTest {
     }
     @Test
     public void getAllProperties() {
-        var properties = jsonReader.getAllProperties();
+        var properties = jsonReader.getPropertyTiles();
         properties.forEach((id,property) -> System.out.println(id));
     }
 
@@ -38,6 +38,5 @@ public class JSONReaderTest {
     @Test
     public void getNonPropertyTiles_test() {
         var nonPropertyTiles = jsonReader.getNonPropertyTiles();
-        System.out.println(nonPropertyTiles);
     }
 }

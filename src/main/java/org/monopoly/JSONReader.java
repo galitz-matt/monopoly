@@ -36,11 +36,17 @@ public class JSONReader {
                 .collect(Collectors.toList());
     }
 
-    public Map<String, Property> getAllProperties() {
+    public Map<String, Tile> getAllTiles() {
+        var tiles = getPropertyTiles();
+        tiles.putAll(getNonPropertyTiles());
+        return tiles;
+    }
+
+    public Map<String, Tile> getPropertyTiles() {
         var rawProperties = jsonRoot.getJSONArray("properties");
         return IntStream.range(0, rawProperties.length())
-                .mapToObj(i -> buildProperty(rawProperties.getJSONObject(i)))
-                .collect(Collectors.toMap(Property::ID, Function.identity()));
+                .mapToObj(i -> buildPropertyTile(rawProperties.getJSONObject(i)))
+                .collect(Collectors.toMap(Tile::ID, Function.identity()));
     }
 
     public List<Card> getCards(String cardType) {
@@ -53,11 +59,11 @@ public class JSONReader {
     public Map<String, Tile> getNonPropertyTiles() {
         var rawTiles = jsonRoot.getJSONArray("otherTiles");
         return IntStream.range(0, rawTiles.length())
-                .mapToObj(i -> buildTile(rawTiles.getJSONObject(i)))
+                .mapToObj(i -> buildNonPropertyTile(rawTiles.getJSONObject(i)))
                 .collect(Collectors.toMap(Tile::ID, Function.identity()));
     }
 
-    private Property buildProperty(JSONObject rawProperty) {
+    private Tile buildPropertyTile(JSONObject rawProperty) {
         var propertyBuilder = new PropertyBuilder();
         propertyBuilder.setID(rawProperty.getString("id"));
         propertyBuilder.setName(rawProperty.getString("name"));
@@ -68,10 +74,11 @@ public class JSONReader {
         var rent = parseRentList(rawProperty.getJSONArray("rent"));
         propertyBuilder.setRentList(rent);
         propertyBuilder.setBuildCost(rawProperty.getInt("housecost"));
-        return propertyBuilder.build();
+        var property = propertyBuilder.build();
+        return new PropertyTile(property.ID(), property);
     }
 
-    private Tile buildTile(JSONObject rawTile) {
+    private Tile buildNonPropertyTile(JSONObject rawTile) {
         var tileFactory = new TileFactory();
         return tileFactory.getTile(rawTile);
     }

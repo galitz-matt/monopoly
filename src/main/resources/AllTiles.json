@@ -757,7 +757,31 @@
     },
     {
       "name": "Chance",
-      "id": "chance",
+      "id": "chance1",
+      "group": "Special",
+      "rel": {
+        "Square": "Chance",
+        "Probability % (Jail Short)": 0.865,
+        "Rank": 40,
+        "Probability % (Jail Long)": 0.8152
+      },
+      "averageProbability": 0.8401000000000001
+    },
+    {
+      "name": "Chance",
+      "id": "chance2",
+      "group": "Special",
+      "rel": {
+        "Square": "Chance",
+        "Probability % (Jail Short)": 0.865,
+        "Rank": 40,
+        "Probability % (Jail Long)": 0.8152
+      },
+      "averageProbability": 0.8401000000000001
+    },
+    {
+      "name": "Chance",
+      "id": "chance3",
       "group": "Special",
       "rel": {
         "Square": "Chance",
@@ -781,7 +805,31 @@
     },
     {
       "name": "Community Chest",
-      "id": "communitychest",
+      "id": "communitychest1",
+      "group": "Special",
+      "rel": {
+        "Square": "Community Chest",
+        "Probability % (Jail Short)": 1.8849,
+        "Rank": 37,
+        "Probability % (Jail Long)": 1.775
+      },
+      "averageProbability": 1.82995
+    },
+    {
+      "name": "Community Chest",
+      "id": "communitychest2",
+      "group": "Special",
+      "rel": {
+        "Square": "Community Chest",
+        "Probability % (Jail Short)": 1.8849,
+        "Rank": 37,
+        "Probability % (Jail Long)": 1.775
+      },
+      "averageProbability": 1.82995
+    },
+    {
+      "name": "Community Chest",
+      "id": "communitychest3",
       "group": "Special",
       "rel": {
         "Square": "Community Chest",
@@ -814,12 +862,12 @@
   "tiles": [
     {"id": "go"},
     {"id": "mediterraneanave"},
-    {"id": "communitychest"},
+    {"id": "communitychest1"},
     {"id": "balticave"},
     {"id": "incometax"},
     {"id": "readingrailroad"},
     {"id": "orientalave"},
-    {"id": "chance"},
+    {"id": "chance1"},
     {"id": "vermontave"},
     {"id": "connecticutave"},
     {"id": "jail"},
@@ -829,12 +877,12 @@
     {"id": "virginiaave"},
     {"id": "pennsylvaniarailroad"},
     {"id": "stjamesplace"},
-    {"id": "communitychest"},
+    {"id": "communitychest2"},
     {"id": "tennesseeave"},
     {"id": "newyorkave"},
     {"id": "freeparking"},
     {"id": "kentuckyave"},
-    {"id": "chance"},
+    {"id": "chance2"},
     {"id": "indianaave"},
     {"id": "illinoisave"},
     {"id": "borailroad"},
@@ -845,10 +893,10 @@
     {"id": "gotojail"},
     {"id": "pacificave"},
     {"id": "northcarolinaave"},
-    {"id": "communitychest"},
+    {"id": "communitychest3"},
     {"id": "pennsylvaniaave"},
     {"id": "shortlinerailroad"},
-    {"id": "chance"},
+    {"id": "chance3"},
     {"id": "parkplace"},
     {"id": "luxurytax"},
     {"id": "boardwalk"}

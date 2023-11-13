@@ -4,13 +4,14 @@ import org.json.JSONObject;
 
 public class TileFactory {
     public Tile getTile(JSONObject rawTile) {
-       return switch (rawTile.getString("id")) {
+        var ID = rawTile.getString("id");
+        return switch (ID) {
             case "go" -> new GoTile();
-            case "incometax", "luxurytax" -> new TaxTile(rawTile.getString("id"), rawTile.getInt("tax"));
+            case "incometax", "luxurytax" -> new TaxTile(ID, rawTile.getInt("tax"));
             case "jail" -> new JailTile();
             case "freeparking" -> new FreeParkingTile();
-            case "communitychest" -> new CommunityChestTile();
-            case "chance" -> new ChanceTile();
+            case "communitychest1", "communitychest2", "communitychest3" -> new CommunityChestTile(ID);
+            case "chance1", "chance2", "chance3" -> new ChanceTile(ID);
             case "gotojail" -> new GoToJailTile();
             default -> null;
        };
