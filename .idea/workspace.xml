@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="fix(main): fix return statement">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Dice.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="fix(main): create Dice">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Dice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +232,7 @@
       <workItem from="1698957103320" duration="5742000" />
       <workItem from="1699403405876" duration="245000" />
       <workItem from="1699653310250" duration="15637000" />
-      <workItem from="1699837781778" duration="6185000" />
+      <workItem from="1699837781778" duration="6647000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -498,14 +498,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699843297374</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="fix(main): create Dice">
+      <option name="closed" value="true" />
+      <created>1699844018998</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1699844018998</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="style(main): add newlines between method signatures in Player" />
     <MESSAGE value="feat(main): implement CPU realization of Player" />
     <MESSAGE value="feat(main): added id's to Tile realizations + getters" />
     <MESSAGE value="feat(main): create JSONReader and implement JSONReader.getJSONRoot(), JSONReader.getOrderedTileIds()" />
@@ -530,6 +537,7 @@
     <MESSAGE value="feat(main): create Chance" />
     <MESSAGE value="feat(main): extract non property tiles from JSON w/ new method, remove position field from Tile realizations" />
     <MESSAGE value="fix(main): fix return statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(main): fix return statement" />
+    <MESSAGE value="fix(main): create Dice" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(main): create Dice" />
   </component>
 </project>

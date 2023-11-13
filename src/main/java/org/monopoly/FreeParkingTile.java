@@ -3,7 +3,7 @@ package org.monopoly;
 public class FreeParkingTile implements Tile {
 
     public void interact(Player player) {
-        //TODO: do nothing
+        System.out.println("Current Tile: Free Parking");
     }
 
     public String ID() {

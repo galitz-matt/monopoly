@@ -3,11 +3,11 @@ package org.monopoly;
 import java.lang.Math;
 
 public class Dice {
-    public static int[] roll() {
-        return new int[] {rollDice(), rollDice()};
+    public static int[] rollDice() {
+        return new int[] {rollDie(), rollDie()};
     }
 
-    private static int rollDice() {
+    private static int rollDie() {
         return (int) Math.floor((Math.random() * 6) + 1);
     }
 }
