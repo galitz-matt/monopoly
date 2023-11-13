@@ -772,7 +772,7 @@
       "name": "Chance",
       "id": "chance2",
       "group": "Special",
-      "position": 12,
+      "position": 22,
       "rel": {
         "Square": "Chance",
         "Probability % (Jail Short)": 0.865,

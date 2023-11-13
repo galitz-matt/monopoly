@@ -23,7 +23,7 @@ public class GameBoard {
         return board.get(position);
     }
 
-    public List<Tile> createBoard(JSONReader jsonReader) {
+    private List<Tile> createBoard(JSONReader jsonReader) {
         var tileIDs = jsonReader.getOrderedIDs();
         var tiles = jsonReader.getAllTiles();
         return tileIDs.stream()
