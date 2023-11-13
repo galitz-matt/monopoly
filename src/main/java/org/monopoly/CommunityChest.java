@@ -6,12 +6,11 @@ import java.util.Collections;
 public class CommunityChest {
     private static CommunityChest instance;
     private final List<Card> deck;
-    private int draws;
-    private int DECK_SIZE = 16;
+    private int draws = 0;
+    private final int DECK_SIZE = 16;
 
     private CommunityChest(JSONReader jsonReader) {
         deck = jsonReader.getCards("communitychest");
-        draws = 0;
     }
 
     public static CommunityChest getInstance() {
