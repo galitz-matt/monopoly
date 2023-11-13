@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): create StringStylist">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GameBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/GameBoardTest.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="fix(main): a lot of fixes related to creating GameBoard forgot to commit in between">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/FreeParkingTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/FreeParkingTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TileFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AllTiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AllTiles.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +219,7 @@
       <workItem from="1698957103320" duration="5742000" />
       <workItem from="1699403405876" duration="245000" />
       <workItem from="1699653310250" duration="15637000" />
-      <workItem from="1699837781778" duration="12787000" />
+      <workItem from="1699837781778" duration="13634000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -525,14 +525,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699847737577</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="fix(main): a lot of fixes related to creating GameBoard forgot to commit in between">
+      <option name="closed" value="true" />
+      <created>1699852312055</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1699852312055</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(main): remove constructionPrices fields, (replaced with buildingCost)" />
     <MESSAGE value="feat(main): add getPosition() method to tiles and position field where appropriate" />
     <MESSAGE value="feat(main): create JSONReader" />
     <MESSAGE value="chore(main): delete unused classes" />
@@ -557,6 +564,7 @@
     <MESSAGE value="refactor(main): remove dependency injection from CommunityChest singleton" />
     <MESSAGE value="refactor(main): remove dependency injection from Chance singleton" />
     <MESSAGE value="feat(main): create StringStylist" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): create StringStylist" />
+    <MESSAGE value="fix(main): a lot of fixes related to creating GameBoard forgot to commit in between" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(main): a lot of fixes related to creating GameBoard forgot to commit in between" />
   </component>
 </project>

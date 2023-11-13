@@ -30,9 +30,4 @@ public class GameBoard {
                 .map(tiles::get)
                 .toList();
     }
-
-    public static void main(String[] args) {
-        var gb = GameBoard.getInstance();
-        System.out.println(gb.board);
-    }
 }

@@ -9,4 +9,6 @@ public class GoTile implements Tile {
     public String ID() {
         return "go";
     }
+
+    public String getName() { return "Go"; }
 }

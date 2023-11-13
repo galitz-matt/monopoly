@@ -13,4 +13,6 @@ public class CommunityChestTile implements Tile {
     public String ID() {
         return id;
     }
+
+    public String getName() { return "Community Chest"; }
 }

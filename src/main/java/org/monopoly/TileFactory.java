@@ -7,7 +7,7 @@ public class TileFactory {
         var ID = rawTile.getString("id");
         return switch (ID) {
             case "go" -> new GoTile();
-            case "incometax", "luxurytax" -> new TaxTile(ID, rawTile.getInt("tax"));
+            case "incometax", "luxurytax" -> new TaxTile(ID, rawTile.getString("name"), rawTile.getInt("tax"));
             case "jail" -> new JailTile();
             case "freeparking" -> new FreeParkingTile();
             case "communitychest1", "communitychest2", "communitychest3" -> new CommunityChestTile(ID);

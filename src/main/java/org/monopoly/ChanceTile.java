@@ -17,4 +17,6 @@ public class ChanceTile implements Tile {
     public String ID() {
         return id;
     }
+
+    public String getName() { return "Chance"; }
 }

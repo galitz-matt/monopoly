@@ -12,9 +12,7 @@ public class JailTile implements Tile {
         return "jail";
     }
 
-    public int getPosition() {
-        return 10;
-    }
+    public String getName() { return "Jail"; }
 
     //TODO: Implement addToJail() and releaseFromJail() methods
 }
