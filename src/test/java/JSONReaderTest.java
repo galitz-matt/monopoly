@@ -34,4 +34,10 @@ public class JSONReaderTest {
         var communityChestCards = jsonReader.getCards("communitychest");
         System.out.println(communityChestCards);
     }
+
+    @Test
+    public void getNonPropertyTiles_test() {
+        var nonPropertyTiles = jsonReader.getNonPropertyTiles();
+        System.out.println(nonPropertyTiles);
+    }
 }

@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): create Chance">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TileFactory.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): extract non property tiles from JSON w/ new method, remove position field from Tile realizations">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/AllTiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AllTiles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TileFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TileFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JSONReaderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +81,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.CommunityChestTest">
+  <component name="RunManager" selected="Gradle.JSONReaderTest.getNonPropertyTiles_test">
     <configuration name="CommunityChestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -184,7 +178,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JSONReaderTest.getChanceCardsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JSONReaderTest.getNonPropertyTiles_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -197,7 +191,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JSONReaderTest.getChanceCardsTest&quot;" />
+            <option value="&quot;JSONReaderTest.getNonPropertyTiles_test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -232,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JSONReaderTest.getNonPropertyTiles_test" />
         <item itemvalue="Gradle.CommunityChestTest" />
         <item itemvalue="Gradle.CommunityChestTest.getCard" />
         <item itemvalue="Gradle.CommunityChestTest.getAnotherCard" />
         <item itemvalue="Gradle.JSONReaderTest.getCards_communityChest_test" />
-        <item itemvalue="Gradle.JSONReaderTest.getChanceCardsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +246,7 @@
       <workItem from="1698957103320" duration="5742000" />
       <workItem from="1699403405876" duration="245000" />
       <workItem from="1699653310250" duration="15637000" />
-      <workItem from="1699837781778" duration="4558000" />
+      <workItem from="1699837781778" duration="5464000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -502,14 +496,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699840515509</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="feat(main): extract non property tiles from JSON w/ new method, remove position field from Tile realizations">
+      <option name="closed" value="true" />
+      <created>1699842385201</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1699842385201</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(main): write method signatures in Player, and create User realization" />
     <MESSAGE value="feat(main): implement Player methods in User" />
     <MESSAGE value="style(main): add newlines between method signatures in Player" />
     <MESSAGE value="feat(main): implement CPU realization of Player" />
@@ -534,6 +535,7 @@
     <MESSAGE value="fix(main): make CommunityChest.getInstance() static" />
     <MESSAGE value="refactor(main): remove static modifiers to fields in CommunityChest" />
     <MESSAGE value="feat(main): create Chance" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): create Chance" />
+    <MESSAGE value="feat(main): extract non property tiles from JSON w/ new method, remove position field from Tile realizations" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): extract non property tiles from JSON w/ new method, remove position field from Tile realizations" />
   </component>
 </project>
