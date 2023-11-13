@@ -1,8 +1,12 @@
 package org.monopoly;
 
+import java.util.Scanner;
+
 public class ChanceTile implements Tile {
+
+    private static final Chance chance = Chance.getInstance();
+
     public void interact(Player player) {
-        //TODO: draw card and do action
     }
 
     public String ID() {

@@ -9,13 +9,13 @@ public class CommunityChest {
     private int draws = 0;
     private final int DECK_SIZE = 16;
 
-    private CommunityChest(JSONReader jsonReader) {
-        deck = jsonReader.getCards("communitychest");
+    private CommunityChest() {
+        deck = new JSONReader().getCards("communitychest");
     }
 
     public static CommunityChest getInstance() {
         if (instance == null) {
-            instance = new CommunityChest(new JSONReader());
+            instance = new CommunityChest();
         }
         return instance;
     }
