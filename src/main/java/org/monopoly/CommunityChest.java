@@ -14,7 +14,7 @@ public class CommunityChest {
         draws = 0;
     }
 
-    public CommunityChest getInstance() {
+    public static CommunityChest getInstance() {
         if (instance == null) {
             instance = new CommunityChest(new JSONReader());
         }
