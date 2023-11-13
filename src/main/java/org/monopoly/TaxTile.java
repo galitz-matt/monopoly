@@ -12,7 +12,12 @@ public class TaxTile implements Tile {
     }
 
     public void interact(Player player) {
-        System.out.println();
+        System.out.printf("""
+                You landed on: %s
+                You must pay %s
+                """, name, tax);
+        player.charge(tax);
+        System.out.printf("Current Balance: %d\n", player.getBalance());
     }
 
     public String ID() {
