@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="refactor(main): rename method">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="fix(main): make CommunityChest.getInstance() static">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CommunityChestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunityChestTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,21 +79,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.JSONReaderTest.getCards_communityChest_test">
-    <configuration name="JSONReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.monopoly.JSONReader" />
-      <module name="monopoly.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.monopoly.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JSONReaderTest.getAllPropertiesByIDTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CommunityChestTest">
+    <configuration name="CommunityChestTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -107,7 +93,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;JSONReaderTest.getAllPropertiesByIDTest&quot;" />
+            <option value="&quot;CommunityChestTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CommunityChestTest.getAnotherCard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CommunityChestTest.getAnotherCard&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CommunityChestTest.getCard" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;CommunityChestTest.getCard&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -166,30 +200,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JSONReaderTest.getOrderedTilesByIDTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;JSONReaderTest.getOrderedTilesByIDTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="monopoly [:JSONReader.main()]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -214,11 +224,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CommunityChestTest" />
+        <item itemvalue="Gradle.CommunityChestTest.getCard" />
+        <item itemvalue="Gradle.CommunityChestTest.getAnotherCard" />
         <item itemvalue="Gradle.JSONReaderTest.getCards_communityChest_test" />
         <item itemvalue="Gradle.JSONReaderTest.getChanceCardsTest" />
-        <item itemvalue="Gradle.JSONReaderTest.getOrderedTilesByIDTest" />
-        <item itemvalue="Gradle.JSONReaderTest.getAllPropertiesByIDTest" />
-        <item itemvalue="Application.JSONReader" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +244,7 @@
       <workItem from="1698957103320" duration="5742000" />
       <workItem from="1699403405876" duration="245000" />
       <workItem from="1699653310250" duration="15637000" />
-      <workItem from="1699837781778" duration="1441000" />
+      <workItem from="1699837781778" duration="2598000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -444,16 +454,37 @@
       <option name="project" value="LOCAL" />
       <updated>1699832629668</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat(main): create CommunityChest">
+      <option name="closed" value="true" />
+      <created>1699839285102</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1699839285102</updated>
+    </task>
+    <task id="LOCAL-00028" summary="test(main): create CommunityChestTest">
+      <option name="closed" value="true" />
+      <created>1699839447597</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1699839447597</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix(main): make CommunityChest.getInstance() static">
+      <option name="closed" value="true" />
+      <created>1699839468542</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1699839468542</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor(main): make Property fields final" />
-    <MESSAGE value="feat(main): Modify Property constructors for id and name fields" />
-    <MESSAGE value="feat(main): create ChanceCard" />
     <MESSAGE value="feat(main): create all Tile realizations" />
     <MESSAGE value="feat(main): create Player interface" />
     <MESSAGE value="feat(main): write method signatures in Player, and create User realization" />
@@ -476,6 +507,9 @@
     <MESSAGE value="feat(main): extract chance cards from JSON" />
     <MESSAGE value="refactor(main): change getChanceCards() to general getCards w/ string parameter" />
     <MESSAGE value="refactor(main): rename method" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(main): rename method" />
+    <MESSAGE value="feat(main): create CommunityChest" />
+    <MESSAGE value="test(main): create CommunityChestTest" />
+    <MESSAGE value="fix(main): make CommunityChest.getInstance() static" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(main): make CommunityChest.getInstance() static" />
   </component>
 </project>
