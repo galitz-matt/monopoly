@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="fix(main): make CommunityChest.getInstance() static">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CommunityChestTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CommunityChestTest.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): create Chance">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CommunityChestTile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TileFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/TaxTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/AllTiles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/AllTiles.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +252,7 @@
       <workItem from="1698957103320" duration="5742000" />
       <workItem from="1699403405876" duration="245000" />
       <workItem from="1699653310250" duration="15637000" />
-      <workItem from="1699837781778" duration="2598000" />
+      <workItem from="1699837781778" duration="4558000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -478,15 +486,29 @@
       <option name="project" value="LOCAL" />
       <updated>1699839468542</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="refactor(main): remove static modifiers to fields in CommunityChest">
+      <option name="closed" value="true" />
+      <created>1699840412045</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1699840412045</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat(main): create Chance">
+      <option name="closed" value="true" />
+      <created>1699840515509</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1699840515509</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(main): create all Tile realizations" />
-    <MESSAGE value="feat(main): create Player interface" />
     <MESSAGE value="feat(main): write method signatures in Player, and create User realization" />
     <MESSAGE value="feat(main): implement Player methods in User" />
     <MESSAGE value="style(main): add newlines between method signatures in Player" />
@@ -510,6 +532,8 @@
     <MESSAGE value="feat(main): create CommunityChest" />
     <MESSAGE value="test(main): create CommunityChestTest" />
     <MESSAGE value="fix(main): make CommunityChest.getInstance() static" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(main): make CommunityChest.getInstance() static" />
+    <MESSAGE value="refactor(main): remove static modifiers to fields in CommunityChest" />
+    <MESSAGE value="feat(main): create Chance" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): create Chance" />
   </component>
 </project>

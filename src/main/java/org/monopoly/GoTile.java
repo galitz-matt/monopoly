@@ -9,8 +9,4 @@ public class GoTile implements Tile {
     public String ID() {
         return "go";
     }
-
-    public int getPosition() {
-        return 0;
-    }
 }

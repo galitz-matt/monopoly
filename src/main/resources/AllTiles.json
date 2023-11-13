@@ -739,7 +739,7 @@
     {
       "name": "Income Tax",
       "id": "incometax",
-      "position": 4,
+      "tax": 200,
       "rel": {
         "Square": "Income Tax",
         "Probability % (Jail Short)": 2.3285,
@@ -805,7 +805,8 @@
     },
     {
       "name": "Luxury Tax",
-      "id": "luxerytax",
+      "id": "luxurytax",
+      "tax": 220,
       "group": "Special",
       "averageProbability": 2.116
     }

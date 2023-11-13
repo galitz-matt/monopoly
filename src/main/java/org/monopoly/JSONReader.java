@@ -43,6 +43,20 @@ public class JSONReader {
                 .collect(Collectors.toMap(Property::ID, Function.identity()));
     }
 
+    public List<Card> getCards(String cardType) {
+        var rawCards = jsonRoot.getJSONArray(cardType);
+        return new ArrayList<>(IntStream.range(0, rawCards.length())
+                .mapToObj(i -> buildCard(rawCards.getJSONObject(i)))
+                .toList());
+    }
+
+    public Map<String, Tile> getNonPropertyTiles() {
+        var rawTiles = jsonRoot.getJSONArray("otherTiles");
+        return IntStream.range(0, rawTiles.length())
+                .mapToObj(i -> buildTile(rawTiles.getJSONObject(i)))
+                .collect(Collectors.toMap(Tile::ID, Function.identity()));
+    }
+
     private Property buildProperty(JSONObject rawProperty) {
         var propertyBuilder = new PropertyBuilder();
         propertyBuilder.setID(rawProperty.getString("id"));
@@ -55,6 +69,11 @@ public class JSONReader {
         propertyBuilder.setRentList(rent);
         propertyBuilder.setBuildCost(rawProperty.getInt("housecost"));
         return propertyBuilder.build();
+    }
+
+    private Tile buildTile(JSONObject rawTile) {
+        var tileFactory = new TileFactory();
+        return tileFactory.getTile(rawTile);
     }
 
     private PropertyType parseType(String rawType) {
@@ -79,14 +98,7 @@ public class JSONReader {
                 .toList());
     }
 
-    public List<Card> getCards(String cardType) {
-        var rawCards = jsonRoot.getJSONArray(cardType);
-        return new ArrayList<>(IntStream.range(0, rawCards.length())
-                .mapToObj(i -> buildCard(rawCards.getJSONObject(i)))
-                .toList());
-    }
-
-    public Card buildCard(JSONObject rawCard) {
+    private Card buildCard(JSONObject rawCard) {
         var cardBuilder = new CardBuilder();
         cardBuilder.setPrompt(rawCard.getString("title"));
         var action = parseAction(rawCard.getString("action"));
