@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class JailTile implements Tile {
 
-    private Map<Player, Integer> inmates;
+    private final Map<Player, Integer> inmates;
 
     public JailTile() {
         inmates = new HashMap<>();
