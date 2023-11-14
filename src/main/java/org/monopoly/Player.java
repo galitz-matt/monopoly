@@ -17,4 +17,6 @@ public interface Player {
     void give(int amount);
 
     boolean isInJail();
+
+    void setJailStatus(boolean status);
 }

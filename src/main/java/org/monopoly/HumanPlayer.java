@@ -36,7 +36,12 @@ public class HumanPlayer implements Player {
     public void moveTo(Tile destination) {
         currentTile = destination;
     }
+
     public boolean isInJail() {
         return isInJail;
+    }
+
+    public void setJailStatus(boolean status) {
+        isInJail = status;
     }
 }

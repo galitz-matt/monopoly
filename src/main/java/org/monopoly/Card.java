@@ -49,8 +49,33 @@ public class Card {
                 player.moveTo(tile);
                 break;
             case MOVE_NEAREST:
-                var tile = findNearest(player.getCurrentTile(), gameBoard);
-                System.out.println(tile);
+                var nearest = findNearest(player.getCurrentTile(), gameBoard);
+                player.moveTo(nearest);
+                break;
+            case COLLECT:
+                player.give(amount);
+                break;
+            case CHARGE:
+                player.charge(amount);
+                break;
+            case PROPERTY_CHARGE:
+                //TODO: charge per property, create AssetManager, read in values w/ JSONReader or BE LAZY
+                break;
+            case GIVE_TO_PLAYERS:
+                //TODO: handle this, create Game singleton class, getPlayers method
+                break;
+            case GET_FROM_PLAYERS:
+                //TODO: charge all players, create Game singleton class, getPlayers method
+                break;
+            case GET_OUT_OF_JAIL:
+                //TODO: set hasGetOutOfJailCard to True, create AssetManager
+                break;
+            case JAIL:
+                var jail = (JailTile) gameBoard.getTileAtPosition(10);
+                player.moveTo(jail);
+                player.setJailStatus(true);
+                jail.addInmate(player);
+                System.out.println("You are now in jail");
         }
     }
 
