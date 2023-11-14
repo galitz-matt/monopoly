@@ -30,9 +30,4 @@ public class GameBoard {
                 .map(tiles::get)
                 .toList();
     }
-
-    public int findDistanceBetweenTiles(Tile tile1, Tile tile2) {
-        var rawDistance = Math.abs(tile1.getPosition() - tile2.getPosition());
-        return Math.min(rawDistance, 40 - rawDistance);
-    }
 }

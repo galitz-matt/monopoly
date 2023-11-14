@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): a LOT">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GameBoard.java" afterDir="false" />
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): partial implementation of Card.interact(), new method GameBoard.findDistanceBetweenTiles">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +223,7 @@
       <workItem from="1699653310250" duration="15637000" />
       <workItem from="1699837781778" duration="16869000" />
       <workItem from="1699907078714" duration="40000" />
-      <workItem from="1699927141009" duration="7978000" />
+      <workItem from="1699927141009" duration="8324000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -595,14 +593,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699930929434</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="feat(main): partial implementation of Card.interact(), new method GameBoard.findDistanceBetweenTiles">
+      <option name="closed" value="true" />
+      <created>1699989081341</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1699989081341</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(main): create Card interface w/ realizations" />
     <MESSAGE value="style(main): move enum types around" />
     <MESSAGE value="feat(main): extract chance cards from JSON" />
     <MESSAGE value="refactor(main): change getChanceCards() to general getCards w/ string parameter" />
@@ -627,6 +632,7 @@
     <MESSAGE value="feat(main): implement HumanPlayer.give(), added TODO" />
     <MESSAGE value="feat(main): change Card id field to Tile field" />
     <MESSAGE value="feat(main): a LOT" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): a LOT" />
+    <MESSAGE value="feat(main): partial implementation of Card.interact(), new method GameBoard.findDistanceBetweenTiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): partial implementation of Card.interact(), new method GameBoard.findDistanceBetweenTiles" />
   </component>
 </project>

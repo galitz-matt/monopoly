@@ -58,8 +58,8 @@ public class Card {
         if (type.equals(UTILITY)) {
             var ecTile = gameBoard.getTileAtPosition(12);
             var wwTile = gameBoard.getTileAtPosition(28);
-            var distanceToElectricCompany = gameBoard.findDistanceBetweenTiles(tile, ecTile);
-            var distanceToWaterWorks = gameBoard.findDistanceBetweenTiles(tile, wwTile);
+            var distanceToElectricCompany = tile.findDistanceToTile(ecTile);
+            var distanceToWaterWorks = tile.findDistanceToTile(wwTile);
 
             if (distanceToElectricCompany < distanceToWaterWorks) {
                 return ecTile;
