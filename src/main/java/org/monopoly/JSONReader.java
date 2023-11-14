@@ -93,8 +93,8 @@ public class JSONReader {
             case "Yellow" -> YELLOW;
             case "darkgreen" -> GREEN;
             case "darkblue" -> BLUE;
-            case "Utilities" -> UTILITY;
-            case "Railroad" -> RAILROAD;
+            case "Utilities", "utility" -> UTILITY;
+            case "Railroad", "railroad" -> RAILROAD;
             default -> null;
         };
     }
@@ -111,12 +111,9 @@ public class JSONReader {
         var action = parseAction(rawCard.getString("action"));
         cardBuilder.setAction(action);
         var tiles = getAllTiles();
-        if (rawCard.has("tileid")) {
-            cardBuilder.setTile(tiles.get(rawCard.getString("tileid")));
-        } else {
-            cardBuilder.setTile(null);
-        }
+        cardBuilder.setTile(rawCard.has("tileid") ? tiles.get(rawCard.getString("tileid")) : null);
         cardBuilder.setAmount(rawCard.has("amount") ? rawCard.getInt("amount") : 0);
+        cardBuilder.setType(rawCard.has("groupid") ? parseType(rawCard.getString("groupid")) : null);
         return cardBuilder.build();
     }
 

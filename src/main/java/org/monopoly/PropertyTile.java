@@ -31,4 +31,12 @@ public class PropertyTile implements Tile {
     public int getPrice() {
         return property.getPrice();
     }
+
+    public String getOwner() {
+        return property.getOwner();
+    }
+
+    public void setOwner(Player player) {
+        property.setOwner(player);
+    }
 }

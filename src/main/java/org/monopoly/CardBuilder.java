@@ -1,13 +1,14 @@
 package org.monopoly;
 
 public class CardBuilder {
-
     private Tile tile;
     private String prompt;
     private Action action;
     private int amount;
+    private PropertyType type;
+
     public Card build() {
-        return new Card(tile, prompt, action, amount);
+        return new Card(prompt, action, tile, amount, type);
     }
 
     public void setTile(Tile tile) {
@@ -23,4 +24,6 @@ public class CardBuilder {
     }
 
     public void setAmount(int amount) { this.amount = amount; }
+
+    public void setType(PropertyType type) { this.type = type; }
 }

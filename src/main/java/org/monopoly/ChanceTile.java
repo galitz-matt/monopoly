@@ -20,7 +20,7 @@ public class ChanceTile implements Tile {
                 """, StringStylist.bold(getName()));
         var card = chance.drawCard();
         System.out.printf("Your card says: %s\n", card.getPrompt());
-
+        card.interact(player);
     }
 
     public String ID() {

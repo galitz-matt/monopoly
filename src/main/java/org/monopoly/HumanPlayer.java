@@ -16,9 +16,13 @@ public class HumanPlayer implements Player {
     public String getName() {
         return name;
     }
+
     public Tile getCurrentTile() {
         return currentTile;
     }
+
+    public int getPosition() { return currentTile.getPosition(); }
+
     public int getBalance() {
         return balance;
     }
@@ -29,7 +33,7 @@ public class HumanPlayer implements Player {
         balance += amount;
     }
 
-    public void movePlayerTo(Tile destination) {
+    public void moveTo(Tile destination) {
         currentTile = destination;
     }
     public boolean isInJail() {

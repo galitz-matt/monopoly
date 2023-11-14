@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): implement HumanPlayer.give(), added TODO">
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="feat(main): change Card id field to Tile field">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/CardBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/CardBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/ChanceTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/HumanPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JSONReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/PropertyTile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,35 +86,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Gradle.GameBoardTest.getTileAtPositionTest">
-    <configuration name="GameBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.monopoly.GameBoard" />
-      <module name="monopoly.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.monopoly.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.JSONReaderTest.getCards_communityChest_test">
     <configuration name="JSONReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.monopoly.JSONReader" />
-      <module name="monopoly.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.monopoly.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringStylist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.monopoly.StringStylist" />
       <module name="monopoly.main" />
       <extension name="coverage">
         <pattern>
@@ -136,6 +114,54 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;GameBoardTest.getTileAtPositionTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="JSONReaderTest.getCards_chance_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;JSONReaderTest.getCards_chance_test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="JSONReaderTest.getCards_communityChest_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;JSONReaderTest.getCards_communityChest_test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -194,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.JSONReaderTest.getCards_communityChest_test" />
+        <item itemvalue="Gradle.JSONReaderTest.getCards_chance_test" />
         <item itemvalue="Gradle.GameBoardTest.getTileAtPositionTest" />
         <item itemvalue="Gradle.JSONReaderTest.getNonPropertyTiles_test" />
         <item itemvalue="Application.JSONReader" />
-        <item itemvalue="Application.GameBoard" />
-        <item itemvalue="Application.StringStylist" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +242,7 @@
       <workItem from="1699653310250" duration="15637000" />
       <workItem from="1699837781778" duration="16869000" />
       <workItem from="1699907078714" duration="40000" />
-      <workItem from="1699927141009" duration="996000" />
+      <workItem from="1699927141009" duration="3735000" />
     </task>
     <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
       <option name="closed" value="true" />
@@ -570,14 +596,21 @@
       <option name="project" value="LOCAL" />
       <updated>1699905718732</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="feat(main): change Card id field to Tile field">
+      <option name="closed" value="true" />
+      <created>1699928160842</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1699928160842</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(main): implement getAllProperties()&#10;perf(main): optimize w/ streams" />
     <MESSAGE value="docs(main): add key-values to JSON" />
     <MESSAGE value="feat(main): create Card interface w/ realizations" />
     <MESSAGE value="style(main): move enum types around" />
@@ -602,6 +635,7 @@
     <MESSAGE value="feat(main): add position field to Tile realizations, (coupling on this is kind of tight but I don't think it matters)" />
     <MESSAGE value="feat(main): more getPosition stuff, commit messages are getting worse IDC" />
     <MESSAGE value="feat(main): implement HumanPlayer.give(), added TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(main): implement HumanPlayer.give(), added TODO" />
+    <MESSAGE value="feat(main): change Card id field to Tile field" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(main): change Card id field to Tile field" />
   </component>
 </project>

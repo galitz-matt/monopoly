@@ -3,7 +3,6 @@ package org.monopoly;
 import java.util.List;
 
 public class Property {
-
     private final String id;
     private final String name;
     private final PropertyType propertyType;
@@ -11,6 +10,7 @@ public class Property {
     private final List<Integer> rentList;
     private final int mortgageValue;
     private final int buildingCost;
+    private Player owner;
 
     public Property(String id, String name, PropertyType propertyType, int price,
                     List<Integer> rentList, int mortgageValue, int buildingCost) {
@@ -51,4 +51,7 @@ public class Property {
         return rentList;
     }
 
+    public String getOwner() { return owner.getName();}
+
+    public void setOwner(Player player) { owner = player; }
 }
