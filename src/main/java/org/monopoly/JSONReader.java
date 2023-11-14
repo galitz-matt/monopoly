@@ -110,7 +110,12 @@ public class JSONReader {
         cardBuilder.setPrompt(rawCard.getString("title"));
         var action = parseAction(rawCard.getString("action"));
         cardBuilder.setAction(action);
-        cardBuilder.setID(rawCard.has("tileid") ? rawCard.getString("tileid") : null);
+        var tiles = getAllTiles();
+        if (rawCard.has("tileid")) {
+            cardBuilder.setTile(tiles.get(rawCard.getString("tileid")));
+        } else {
+            cardBuilder.setTile(null);
+        }
         cardBuilder.setAmount(rawCard.has("amount") ? rawCard.getInt("amount") : 0);
         return cardBuilder.build();
     }

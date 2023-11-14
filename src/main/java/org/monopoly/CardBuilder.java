@@ -2,16 +2,16 @@ package org.monopoly;
 
 public class CardBuilder {
 
-    private String id;
+    private Tile tile;
     private String prompt;
     private Action action;
     private int amount;
     public Card build() {
-        return new Card(id, prompt, action, amount);
+        return new Card(tile, prompt, action, amount);
     }
 
-    public void setID(String id) {
-        this.id = id;
+    public void setTile(Tile tile) {
+        this.tile = tile;
     }
 
     public void setPrompt(String prompt) {

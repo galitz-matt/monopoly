@@ -14,6 +14,13 @@ public class ChanceTile implements Tile {
     }
 
     public void interact(Player player) {
+        System.out.printf("""
+                Current position %s
+                Drawing card...
+                """, StringStylist.bold(getName()));
+        var card = chance.drawCard();
+        System.out.printf("Your card says: %s\n", card.getPrompt());
+
     }
 
     public String ID() {
