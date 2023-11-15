@@ -1,8 +1,9 @@
 package org.monopoly;
 
 public class GoToJailTile implements Tile {
+
     public void interact(Player player) {
-        //Send player to jail
+
     }
 
     public String ID() {
@@ -12,4 +13,9 @@ public class GoToJailTile implements Tile {
     public String getName() { return "Go To Jail"; }
 
     public int getPosition() { return 30; }
+
+    @Override
+    public int findDistanceToTile(Tile tile) {
+        return Tile.super.findDistanceToTile(tile);
+    }
 }

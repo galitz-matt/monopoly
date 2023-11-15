@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="refactor(main): make JailTile.inmates final">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/GoToJailTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Tile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +79,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.monopoly" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Card">
     <configuration name="Card" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.monopoly.Card" />
