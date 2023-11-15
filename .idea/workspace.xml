@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="fix(main): acknowledge previous change in Card">
+    <list default="true" id="e78b2874-cde2-4e80-863d-0a80ef54e42b" name="Changes" comment="refactor(main): make JailTile.inmates final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/HumanPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/HumanPlayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/JailTile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/monopoly/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/monopoly/Player.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,31 +225,7 @@
       <workItem from="1699837781778" duration="16869000" />
       <workItem from="1699907078714" duration="40000" />
       <workItem from="1699927141009" duration="8569000" />
-      <workItem from="1700004150105" duration="1375000" />
-    </task>
-    <task id="LOCAL-00001" summary="feat(main): crate Property POJO, w/ Tile interface and PropertyType enum">
-      <option name="closed" value="true" />
-      <created>1698874531819</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1698874531819</updated>
-    </task>
-    <task id="LOCAL-00002" summary="refactor(main): make Property fields final">
-      <option name="closed" value="true" />
-      <created>1698874798660</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1698874798660</updated>
-    </task>
-    <task id="LOCAL-00003" summary="feat(main): Modify Property constructors for id and name fields">
-      <option name="closed" value="true" />
-      <created>1698939710308</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1698939710308</updated>
+      <workItem from="1700004150105" duration="2227000" />
     </task>
     <task id="LOCAL-00004" summary="feat(main): create ChanceCard">
       <option name="closed" value="true" />
@@ -622,16 +595,37 @@
       <option name="project" value="LOCAL" />
       <updated>1699989527105</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="feat(main): more features for Card.interact()">
+      <option name="closed" value="true" />
+      <created>1700005551702</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1700005551702</updated>
+    </task>
+    <task id="LOCAL-00051" summary="feat(main): implement CommunityChestTile.interact()">
+      <option name="closed" value="true" />
+      <created>1700005758306</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1700005758306</updated>
+    </task>
+    <task id="LOCAL-00052" summary="refactor(main): make JailTile.inmates final">
+      <option name="closed" value="true" />
+      <created>1700005836294</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1700005836294</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor(main): change getChanceCards() to general getCards w/ string parameter" />
-    <MESSAGE value="refactor(main): rename method" />
-    <MESSAGE value="feat(main): create CommunityChest" />
     <MESSAGE value="test(main): create CommunityChestTest" />
     <MESSAGE value="fix(main): make CommunityChest.getInstance() static" />
     <MESSAGE value="refactor(main): remove static modifiers to fields in CommunityChest" />
@@ -654,6 +648,9 @@
     <MESSAGE value="feat(main): partial implementation of Card.interact(), new method GameBoard.findDistanceBetweenTiles" />
     <MESSAGE value="feat(main): create default method in Tile interface findDistanceToTile to replace GameBoard.findDistanceBetweenTiles (KEEP GAMEBOARD POJO)" />
     <MESSAGE value="fix(main): acknowledge previous change in Card" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(main): acknowledge previous change in Card" />
+    <MESSAGE value="feat(main): more features for Card.interact()" />
+    <MESSAGE value="feat(main): implement CommunityChestTile.interact()" />
+    <MESSAGE value="refactor(main): make JailTile.inmates final" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(main): make JailTile.inmates final" />
   </component>
 </project>
